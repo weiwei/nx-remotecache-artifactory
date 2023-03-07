@@ -1,0 +1,23 @@
+{
+  "name": "nx-remotecache-artifactory",
+  "version": "0.0.1",
+  "description": "nx remote cache for artifactory generic storage",
+  "main": "index.js",
+  "scripts": {
+    "build": "rm -rf dist && tsc && cp package.json dist/package.json && cp README.md dist/README.md && cp CHANGELOG.md dist/CHANGELOG.md",
+    "release": "npm run build && cd dist && npm publish && cd ..",
+    "link": "npm run build && cd dist && npm link && cd .."
+  },
+  "author": "Weiwei Wang",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^18.14.6",
+    "@types/yargs": "^17.0.22",
+    "typescript": "^4.9.5"
+  },
+  "dependencies": {
+    "@nrwl/workspace": "^15.8.5",
+    "axios": "^1.3.4",
+    "nx-remotecache-custom": "^3.0.0"
+  }
+}

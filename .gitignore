@@ -1,0 +1,7 @@
+package-lock.json
+node_modules
+index.js
+*.tgz
+dist
+.DS_STORE
+.vscode/
