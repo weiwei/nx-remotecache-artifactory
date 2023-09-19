@@ -4,13 +4,13 @@ import {
   CustomRunnerOptions,
   initEnv,
   RemoteCacheImplementation,
-} from "nx-remotecache-custom";
+} from "nx-remotecache-custom-3";
 import { Stream, Readable } from "stream";
 
 const ENV_URL = "NXCACHE_ARTIFACTORY_URL";
 const ENV_USER = "NXCACHE_ARTIFACTORY_USER";
 const ENV_SECRET = "NXCACHE_ARTIFACTORY_SECRET";
-const ENV_RETENTION = "NXCACHE_ARTIFACTORY_RETENTION";
+const ENV_RETENTION = "NXCACHE_ARTIFACTORY_RETENTION"; // in days
 
 const getEnv = (key: string) => process.env[key];
 

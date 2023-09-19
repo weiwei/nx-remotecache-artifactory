@@ -1,6 +1,6 @@
 {
   "name": "nx-remotecache-artifactory",
-  "version": "0.0.2",
+  "version": "0.0.5",
   "description": "nx remote cache for artifactory generic storage",
   "main": "index.js",
   "scripts": {
@@ -18,6 +18,6 @@
   "dependencies": {
     "@nrwl/workspace": "^15.8.5",
     "axios": "^1.3.4",
-    "nx-remotecache-custom": "^3.0.0"
+    "nx-remotecache-custom-3": "^3.0.1"
   }
 }
