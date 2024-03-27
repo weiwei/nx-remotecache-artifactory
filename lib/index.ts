@@ -37,7 +37,8 @@ export class Client {
   }
 
   async upload(fileName: string, stream: Stream): Promise<unknown> {
-    await this.instance.put(fileName, stream, {
+    await this.instance.put(fileName, stream);
+    await this.instance.put(fileName, {
       params: { properties: `RetentionPolicy=${this.retention}` },
     });
     return;
