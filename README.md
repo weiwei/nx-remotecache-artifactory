@@ -6,7 +6,7 @@ This package was built with [nx-remotecache-custom](https://www.npmjs.com/packag
 
 ## NOTE
 
-Version 0.0.4 works with NX 16+, version 0.0.5, 0.0.6 works with NX 15-. Will sort this out later.
+Version 0.0.4 works with NX 16+, version 0.0.5, 0.1.0 works with NX 15-. Will sort this out later.
 
 ## Setup
 
