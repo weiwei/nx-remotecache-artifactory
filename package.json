@@ -1,6 +1,6 @@
 {
   "name": "nx-remotecache-artifactory",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "nx remote cache for artifactory generic storage",
   "main": "index.js",
   "scripts": {
