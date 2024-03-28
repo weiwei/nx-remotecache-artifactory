@@ -13,6 +13,7 @@ const ENV_SECRET = "NXCACHE_ARTIFACTORY_SECRET";
 const ENV_RETENTION = "NXCACHE_ARTIFACTORY_RETENTION"; // in days
 
 const getEnv = (key: string) => process.env[key];
+const delay = (ms: number) => new Promise(resolve => setTimeout(resolve, ms))
 
 interface RunnerOptions {
   url: string;
@@ -38,6 +39,7 @@ export class Client {
 
   async upload(fileName: string, stream: Stream): Promise<unknown> {
     await this.instance.put(fileName, stream);
+    delay(10000);
     await this.instance.put(fileName, {
       params: { properties: `RetentionPolicy=${this.retention}` },
     });
@@ -71,7 +73,6 @@ function getClient(options: CustomRunnerOptions<RunnerOptions>): Client {
 const runner: unknown = createCustomRunner<RunnerOptions>(
   async (options): Promise<RemoteCacheImplementation> => {
     initEnv(options);
-
     const client = getClient(options);
     return {
       name: "HTTP Storage",
