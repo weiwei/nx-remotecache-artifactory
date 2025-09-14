@@ -4,7 +4,7 @@ import {
   CustomRunnerOptions,
   initEnv,
   RemoteCacheImplementation,
-} from "nx-remotecache-custom-3";
+} from "nx-remotecache-custom";
 import { Stream, Readable } from "stream";
 
 const ENV_URL = "NXCACHE_ARTIFACTORY_URL";

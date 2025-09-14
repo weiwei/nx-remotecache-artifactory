@@ -1,0 +1,5 @@
+packageExtensions:
+  nx@20.7.2:
+    dependencies:
+      '@types/yargs': ^17.0.33
+      '@types/semver': ^7.7.1

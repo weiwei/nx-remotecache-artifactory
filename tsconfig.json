@@ -10,7 +10,8 @@
       "esModuleInterop": true,
       "outDir": "dist",
       "declaration": true,
-      "types": ["node"]
+      "types": ["node"],
+      "skipLibCheck": true
     },
     "include": ["lib/**.ts"]
   }
