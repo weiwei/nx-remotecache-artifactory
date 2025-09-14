@@ -8,7 +8,7 @@ This package was built with [nx-remotecache-custom](https://www.npmjs.com/packag
 
 Version 0.0.4 works with NX 16+, version 0.0.5 works with NX 15-. Will sort this out later.
 
-version 20.7.2 is based on lerna 20.7.2
+version 20.7.2 is based on nx 20.7.2 and lerna 8
 
 ## Setup
 
