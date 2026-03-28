@@ -1,5 +1,7 @@
 # nx-remotecache-artifactory
 
+**Discontinued**. Custom cache is now possible with the official APIs, theough you have to have a web service runs at the front, which is not as convenient as before. Perhaps look into nx's s3 cache and alike for an alternative.
+
 A task runner for @nrwl/nx that uses an Artifactory generic storage as a remote cache. This enables all team members and CI servers to share a single cache. The concept and benefits of computation caching are explained in the NX documentation.
 
 This package was built with [nx-remotecache-custom](https://www.npmjs.com/package/nx-remotecache-custom) 🙌
